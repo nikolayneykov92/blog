@@ -1,0 +1,23 @@
+<form class="blog-form">
+  <label>
+    <span>Title</span>
+    <input name="title" [(ngModel)]="form.title" type="text" />
+  </label>
+  <label>
+    <span>Description</span>
+    <textarea name="description" [(ngModel)]="form.description"></textarea>
+  </label>
+  <div class="text-align-right">
+    <button>Cancel</button>
+    <button (click)="save()">Save</button>
+  </div>
+</form>
+
+<ul class="blog-list">
+  <li *ngFor="let blog of blogs | async">
+    <article>
+      <h4>{{ blog.title }}</h4>
+      <p>{{ blog.description }}</p>
+    </article>
+  </li>
+</ul>

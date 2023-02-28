@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "blog-8c941": {
+      "hosting": {
+        "blog": [
+          "blog-8c941"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "blog-8c941"
+  }
+}
